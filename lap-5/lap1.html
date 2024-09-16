@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lap 1</title>
+    <style>
+      .slider {
+        position: relative;
+        width: 80vw;
+        height: 70vh;
+        overflow: hidden;
+      }
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+      .slide {
+        min-width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        border-radius: 10px;
+      }
+      .d-flex button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 2em;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+      }
+      .d-flex button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .prev {
+        left: 10px;
+      }
+      .next {
+        right: 10px;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container-lg bg-light w-100">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Lap 1
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="../lap-1/assignment1.html"
+                  >Assignment 1</a
+                >
+                <a class="dropdown-item" href="../lap-1/assignment2.html"
+                  >Assignment 2</a
+                >
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Lap 2
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="../lap-2/assignment1.html"
+                  >Assignment 1</a
+                >
+                <a class="dropdown-item" href="../lap-2/assignment2.html"
+                  >Assignment 2</a
+                >
+                <a class="dropdown-item" href="../lap-2/assignment3.html"
+                  >Assignment 3</a
+                >
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Lap 3
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="../lap-3/part1-assignment1.html"
+                  >Part-1 Assignment-1</a
+                >
+                <a class="dropdown-item" href="../lap-3/part1-assignment2.html"
+                  >Part-1 Assignment-2</a
+                >
+                <a class="dropdown-item" href="../lap-3/part2-assignment1.html"
+                  >Part-2 Assignment-1</a
+                >
+                <a class="dropdown-item" href="../lap-3/part2-assignment2.html"
+                  >Part-2 Assignment-2</a
+                >
+                <a class="dropdown-item" href="../lap-3/part2-bouns.html"
+                  >Bonus</a
+                >
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Lap 4
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="../lap-4/part1.html">Part 1</a>
+                <a class="dropdown-item" href="../lap-4/part2.html">Part 2</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Lap 5
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="../lap-5/lap1.html"
+                  >Assignment 1</a
+                >
+                <a class="dropdown-item" href="../lap-5/lap2.html"
+                  >Assignment 2</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center min-vh-100">
+      <div class="my-container">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide" id="slide1" style="background-color: red">1</div>
+            <div class="slide" id="slide2" style="background-color: blue">
+              2
+            </div>
+            <div class="slide" id="slide3" style="background-color: green">
+              3
+            </div>
+            <div class="slide" id="slide4" style="background-color: yellow">
+              4
+            </div>
+            <div class="slide" id="slide5" style="background-color: orange">
+              5
+            </div>
+            <div class="slide" id="slide6" style="background-color: purple">
+              6
+            </div>
+          </div>
+          <button class="prev" onclick="prevSlide()">❮</button>
+          <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let currentIndex = 0;
+      const slides = document.querySelector(".slides");
+      const totalSlides = document.querySelectorAll(".slide").length;
+
+      function showSlide(index) {
+        if (index >= totalSlides) {
+          currentIndex = 0;
+        } else if (index < 0) {
+          currentIndex = totalSlides - 1;
+        } else {
+          currentIndex = index;
+        }
+        const offset = -currentIndex * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+      }
+
+      function nextSlide() {
+        showSlide(currentIndex + 1);
+      }
+
+      function prevSlide() {
+        showSlide(currentIndex - 1);
+      }
+
+      // Auto slide every 3 seconds
+      setInterval(nextSlide, 3000);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
